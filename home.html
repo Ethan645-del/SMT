@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Wearable Tech</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="slye.css" />
+    <link rel="icon" type="image/png" href="SMT.png" />
+  </head>
+  <body>
+    <!-- Taskbar (Home bar) -->
+    <div class="taskbar">
+      <a href="index.html">Battery Factors</a>
+      <a href="home.html">Home</a>
+      <a href="privacy.html">Privacy Features</a>
+      <a href="eather.html"> Weather conditions </a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+      <div class="title">SMART WEARABLE TECH</div>
+      <img
+        src="cb594495-5011-4182-80e6-3e832fe213cc-removebg-preview.png"
+        alt="Smart Glasses"
+        class="glasses fade-effect"
+        id="glasses"
+      />
+    </div>
+
+    <!-- Extended Content Section -->
+    <div class="extended-content">
+      <div class="info">
+        <h2>Smart Technology</h2>
+        <p>
+          Focuing in on AR smart glasses enhance real-world experiences by
+          overlaying digital information using transparent displays, sensors,
+          and AI-driven features. They enable hands-free interaction through
+          voice commands, gesture recognition, and wireless connectivity. Common
+          applications include workplace efficiency in manufacturing and
+          healthcare, real-time navigation, immersive gaming, interactive
+          education, and AR-assisted retail experiences. However, challenges
+          such as battery life, limited field of view, high costs, and privacy
+          concerns remain. Future advancements focus on AI integration, lighter
+          designs, improved battery efficiency, wider displays, and 5G/cloud
+          connectivity, making AR smart glasses more practical and accessible.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let glasses = document.getElementById("glasses");
+        let scrollPosition = window.scrollY;
+        let fadePoint = 100;
+
+        if (scrollPosition > fadePoint) {
+          glasses.style.opacity = 0;
+        } else {
+          glasses.style.opacity = 1;
+        }
+      });
+    </script>
+  </body>
+</html>
