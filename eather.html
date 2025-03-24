@@ -69,5 +69,18 @@
         </p>
       </div>
     </div>
+       <script>
+      window.addEventListener("scroll", function () {
+        let taskbar = document.querySelector(".taskbar");
+        let scrollPosition = window.scrollY;
+        let fadePoint = 100;
+
+        if (scrollPosition > fadePoint) {
+          taskbar.style.opacity = 0;
+        } else {
+          taskbar.style.opacity = 1;
+        }
+      });
+    </script>
   </body>
 </html>
